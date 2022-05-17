@@ -10,7 +10,7 @@ img = cv2.imread("donas.jpg",1)
 img = cv2.resize(img,(300,300))
 dst = cv2.Laplacian(img,cv2.CV_16S,ksize=3)   
 dst = cv2.convertScaleAbs(dst) 
-cv2.imshow("img",img)   
+cv2.imshow("Original5",img)   
 cv2.imshow("Laplace",dst)   
 
 gris = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
